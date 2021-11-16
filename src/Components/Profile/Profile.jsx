@@ -22,7 +22,7 @@ import {
 const Profile = () => {
   const [skills, setskills] = useState([]);
   useEffect(() => {
-    axios.get('../../db.json').then(res => setskills(res.data.skills));
+    axios.get('db.json').then(res => setskills(res.data.skills));
   }, []);
 
   const skill = skills.map(skillItem => {
