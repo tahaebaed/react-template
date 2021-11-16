@@ -10,7 +10,7 @@ import Footer from '../Footer/Footer.jsx';
 class Index extends Component {
   render() {
     return (
-      <div>
+      <>
         <Home />
         <Work />
         <Portfolio />
@@ -18,7 +18,7 @@ class Index extends Component {
         <About />
         <SocialMedia />
         <Footer />
-      </div>
+      </>
     );
   }
 }

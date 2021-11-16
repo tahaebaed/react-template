@@ -18,7 +18,7 @@ class Work extends Component {
   };
 
   componentDidMount() {
-    axios.get('js/db.json').then(res =>
+    axios.get('db.json').then(res =>
       this.setState({
         works: res.data.works,
       })

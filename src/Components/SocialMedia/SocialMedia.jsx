@@ -14,7 +14,7 @@ const SocialMedia = () => {
   const [socials, setSocials] = useState([]);
 
   useEffect(() => {
-    axios.get('js/db.json').then(res => setSocials(res.data.social));
+    axios.get('../../db.json').then(res => setSocials(res.data.social));
   }, []);
 
   const social = socials.map(social => {

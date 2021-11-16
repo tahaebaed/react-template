@@ -14,12 +14,7 @@ import {
 const Portfolio = () => {
   const [images, setImages] = useState([]);
   useEffect(() => {
-    // axios.get('js/db.json').then(res =>
-    //   this.setState({
-    //     works: res.data.works,
-    //   })
-    // );
-    axios.get('js/db.json').then(res => setImages(res.data.portfolio));
+    axios.get('db.json').then(res => setImages(res.data.portfolio));
   }, []);
   const protfolio = images.map(img => {
     return (
